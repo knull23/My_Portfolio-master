@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}Projects | Portfolio{% endblock %}
+{% block content %}
+<!-- Panel (Banner) -->
+<section class="panel banner right">
+    <div class="content color0 span-3-75">
+        <h1 class="major">My Projects</h1>
+        <p>Here are some of the projects I have worked on. Feel free to explore them!</p>
+        <ul class="actions">
+            <li><a href="#projects" class="button primary color1 circle icon solid fa-angle-right">Explore</a></li>
+            <li>
+                <a href="{{ url_for('home') }}" class="button primary color1 circle">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered span-1-75" data-position="25% 25%">
+        <img src="{{ url_for('static', filename='assets/images/pic01.jpg') }}" alt="">
+    </div>
+</section>
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight large left">
+    <div class="content span-5">
+        <h2 class="major"> Customer Churn Prediction System</h2>
+        <p> Built an ML pipeline to predict customer churn with 85% accuracy using XGBoost. Exposed model through a Flask REST API and integrated it with a React.js frontend for live predictions. Created an analytics dashboard with Chart.js to track churn metrics, boosting actionable insights.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Churn_Prediction_Model" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top right">
+        <img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="">
+    </div>
+</section>
+
+<section class="panel spotlight medium right" id="projects">
+    <div class="content span-7">
+        <h2 class="major"> Task Management App</h2>
+        <p> Developed a to-do list application with user registration, login, and task management features. Utilized Python and Flask for the backend, with SQLite for data storage. Implemented task creation, editing, deletion, prioritization, and completion tracking. Focused on providing a simple and intuitive user interface using HTML, CSS, and Bootstrap.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Task_Management_App/tree/master" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top left">
+        <img src="{{ url_for('static', filename='assets/images/pic02.jpg') }}" alt="">
+    </div>
+</section>
+
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight medium right">
+    <div class="content span-7">
+        <h2 class="major">AI ChatBot (MERN Stack)</h2>
+        <p> Built a GPT-powered chatbot using MERN stack with JWT-based user authentication. Connected OpenAI API for real-time chat responses; stored chats using MongoDB. Deployed app on Render with persistent sessions and TypeScript for type safety</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Chat-Bot-Using-Mern" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top left">
+        <img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="">
+    </div>
+</section>
+
+
+<!-- Panel -->
+<section class="panel color1">
+    <div class="intro joined">
+        <h2 class="major">Blog Platform</h2>
+        <p>A blog platform built with Flask, featuring user login, registration, and CRUD functionality for blog posts.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Blog-with-Users-2" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="inner">
+        <ul class="grid-icons three connected">
+            <li><span class="icon fa-gem"><span class="label">Flask</span></span></li>
+            <li><span class="icon solid fa-camera-retro"><span class="label">CRUD</span></span></li>
+            <li><span class="icon solid fa-cog"><span class="label">Authentication</span></span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight medium right">
+    <div class="content span-7">
+        <h2 class="major">Cafe Review Web App</h2>
+        <p>Developed a web application using Flask that allows users to add, view, and delete cafes, storing data in a CSV le.- Implemented a clean interface for users to interact with and manage cafe reviews.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Cafe_Wifi_Website" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top left">
+        <img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="">
+    </div>
+</section>
+
+<section class="panel spotlight large left">
+    <div class="content span-5">
+        <h2 class="major">Open Library</h2>
+        <p>A book search application that allows users to search books by title, author, or ISBN using the Open Library API.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/BOOK-NOTES-USING-OPEN-LIBRARY-API" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top right">
+        <img src="{{ url_for('static', filename='assets/images/pic02.jpg') }}" alt="">
+    </div>
+</section>
+
+{% endblock %}
+
